@@ -9,22 +9,23 @@
 import UIKit
 
 class CharacterInfoVC: UIViewController {
+    
+    let cornerRadius: CGFloat = 10.0
+    let borderWidth: CGFloat = 1.0
 
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var stackView: UIStackView!
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        backButton.layer.cornerRadius = cornerRadius
+        backButton.layer.borderWidth = borderWidth
+        
+        //create and set all data in stackview
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
