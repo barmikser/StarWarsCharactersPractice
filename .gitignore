@@ -88,3 +88,154 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+Pods/Manifest.lock
+Pods/AsyncSwift/LICENSE.txt
+Pods/AsyncSwift/README.md
+Pods/AsyncSwift/Sources/Async/Async.swift
+Pods/IQKeyboardManagerSwift/LICENSE.md
+Pods/IQKeyboardManagerSwift/README.md
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardManager.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQTextView/IQTextView.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQInvocation.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift
+Pods/IQKeyboardManagerSwift/IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift
+Pods/MagicalRecord/LICENSE
+Pods/MagicalRecord/README.md
+Pods/MagicalRecord/MagicalRecord/MagicalRecord.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/MagicalImportFunctions.h
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/MagicalImportFunctions.m
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h
+Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h
+Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Actions.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Actions.m
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+ErrorHandling.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+ErrorHandling.m
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+iCloud.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+iCloud.m
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Options.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Options.m
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Setup.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Setup.m
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+ShorthandMethods.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+ShorthandMethods.m
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordDeprecationMacros.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordInternal.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordInternal.m
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordLogging.h
+Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordXcode7CompatibilityMacros.h
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/ReachabilitySwift/LICENSE
+Pods/ReachabilitySwift/README.md
+Pods/ReachabilitySwift/Sources/Reachability.swift
+Pods/SVProgressHUD/LICENSE
+Pods/SVProgressHUD/README.md
+Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.h
+Pods/SVProgressHUD/SVProgressHUD/SVIndefiniteAnimatedView.m
+Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.h
+Pods/SVProgressHUD/SVProgressHUD/SVProgressAnimatedView.m
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.h
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.m
+Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.h
+Pods/SVProgressHUD/SVProgressHUD/SVRadialGradientLayer.m
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/angle-mask.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/angle-mask@2x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/angle-mask@3x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/error.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/error@2x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/error@3x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/info.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/info@2x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/info@3x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/success.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/success@2x.png
+Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle/success@3x.png
+Pods/Target Support Files/AsyncSwift/AsyncSwift-dummy.m
+Pods/Target Support Files/AsyncSwift/AsyncSwift-Info.plist
+Pods/Target Support Files/AsyncSwift/AsyncSwift-prefix.pch
+Pods/Target Support Files/AsyncSwift/AsyncSwift-umbrella.h
+Pods/Target Support Files/AsyncSwift/AsyncSwift.modulemap
+Pods/Target Support Files/AsyncSwift/AsyncSwift.xcconfig
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-dummy.m
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-Info.plist
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-prefix.pch
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift-umbrella.h
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.modulemap
+Pods/Target Support Files/IQKeyboardManagerSwift/IQKeyboardManagerSwift.xcconfig
+Pods/Target Support Files/MagicalRecord/MagicalRecord-dummy.m
+Pods/Target Support Files/MagicalRecord/MagicalRecord-Info.plist
+Pods/Target Support Files/MagicalRecord/MagicalRecord-prefix.pch
+Pods/Target Support Files/MagicalRecord/MagicalRecord-umbrella.h
+Pods/Target Support Files/MagicalRecord/MagicalRecord.modulemap
+Pods/Target Support Files/MagicalRecord/MagicalRecord.xcconfig
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-acknowledgements.markdown
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-acknowledgements.plist
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-dummy.m
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-frameworks-Debug-input-files.xcfilelist
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-frameworks-Debug-output-files.xcfilelist
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-frameworks-Release-input-files.xcfilelist
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-frameworks-Release-output-files.xcfilelist
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-frameworks.sh
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-Info.plist
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice-umbrella.h
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice.debug.xcconfig
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice.modulemap
+Pods/Target Support Files/Pods-SWCharactersPractice/Pods-SWCharactersPractice.release.xcconfig
+Pods/Target Support Files/ReachabilitySwift/ReachabilitySwift-dummy.m
+Pods/Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist
+Pods/Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch
+Pods/Target Support Files/ReachabilitySwift/ReachabilitySwift-umbrella.h
+Pods/Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap
+Pods/Target Support Files/ReachabilitySwift/ReachabilitySwift.xcconfig
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-dummy.m
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD-umbrella.h
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD.modulemap
+Pods/Target Support Files/SVProgressHUD/SVProgressHUD.xcconfig

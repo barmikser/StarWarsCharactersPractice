@@ -8,29 +8,42 @@
 
 import UIKit
 import CoreData
+import MagicalRecord
+import Reachability
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        MagicalRecord.setupCoreDataStack(withStoreNamed: "SWCharactersPractice")
+        
+        ReachabilityManager.shared.startMonitoring()
+        ReachabilityManager.shared.addListener(listener: self)
+        
+        IQKeyboardManager.shared.enable = true
+        
+        let vc = SearchVC(nibName: "SearchVC", bundle: nil)
+        let navVC = UINavigationController(rootViewController: vc)
+        navVC.isNavigationBarHidden = true
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        ReachabilityManager.shared.stopMonitoring()
     }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        ReachabilityManager.shared.startMonitoring()
     }
 
     // MARK: - Core Data stack
@@ -77,6 +90,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 
+extension AppDelegate: NetworkStatusListener {
+    func networkStatusDidChange(status: Reachability.Connection) {
+        //here actions when network status change
+    }
+}
