@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleAndValueCell" customModule="SWCharacters" customModuleProvider="target">
+            <connections>
+                <outlet property="ActionButton" destination="Iif-M0-NNc" id="3UB-kb-bhQ"/>
+                <outlet property="TextLabel" destination="cBG-Cb-mAX" id="oND-kW-Bso"/>
+                <outlet property="TitleLabel" destination="A7g-rc-3a7" id="Qpn-mM-5Se"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TitleAndValueCell" customModule="SWCharacters" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Empire Strikes Back" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7g-rc-3a7">
+                    <rect key="frame" x="5" y="5" width="176.5" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="hg6-qz-EaI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBG-Cb-mAX">
+                    <rect key="frame" x="5" y="30" width="369" height="480"/>
+                    <mutableString key="text">It is a dark time for the Rebellion. Although the Death Star has been destroyed, Imperial troops have driven the Rebel forces from their hidden base and pursued them across the galaxy.  Evading the dreaded Imperial Starfleet, a group of freedom fighters led by Luke Skywalker has established a new secret base on the remote ice world of Hoth.  The evil lord Darth Vader, obsessed with finding young Skywalker, has dispatched thousands of remote probes into the far reaches of space....</mutableString>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-M0-NNc">
+                    <rect key="frame" x="379" y="5" width="30" height="505"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Mqb-4Y-7Cu"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="ic_next"/>
+                    <connections>
+                        <action selector="ActionButtonPressed:" destination="-1" eventType="touchUpInside" id="cOO-d6-6zv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Iif-M0-NNc" secondAttribute="bottom" constant="5" id="6Ji-Jh-UQR"/>
+                <constraint firstItem="Iif-M0-NNc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="A7g-rc-3a7" secondAttribute="trailing" constant="5" id="GM4-ed-zcS"/>
+                <constraint firstItem="A7g-rc-3a7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="IbV-5a-iah"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="cBG-Cb-mAX" secondAttribute="bottom" constant="5" id="OVp-Zr-U8R"/>
+                <constraint firstItem="cBG-Cb-mAX" firstAttribute="leading" secondItem="A7g-rc-3a7" secondAttribute="leading" id="ZLT-xa-lmx"/>
+                <constraint firstItem="cBG-Cb-mAX" firstAttribute="top" secondItem="A7g-rc-3a7" secondAttribute="bottom" constant="5" id="kNP-Go-Atn"/>
+                <constraint firstItem="Iif-M0-NNc" firstAttribute="leading" secondItem="cBG-Cb-mAX" secondAttribute="trailing" constant="5" id="lTs-c0-zPx"/>
+                <constraint firstItem="A7g-rc-3a7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="uIM-Xd-Sa0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Iif-M0-NNc" secondAttribute="trailing" constant="5" id="wYX-hg-YfC"/>
+                <constraint firstItem="Iif-M0-NNc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="yV6-Tg-vXA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-27.120535714285712"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_next" width="24" height="24"/>
+    </resources>
+</document>
