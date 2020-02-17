@@ -1,4 +1,117 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G3020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FilmModel" representedClassName="FilmModel" syncable="YES" codeGenerationType="category">
+        <attribute name="createdTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="director" optional="YES" attributeType="String"/>
+        <attribute name="editedTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="episodeID" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="openingCrawl" optional="YES" attributeType="String"/>
+        <attribute name="producer" optional="YES" attributeType="String"/>
+        <attribute name="releaseDate" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="characters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PeopleModel" inverseName="films" inverseEntity="PeopleModel"/>
+        <relationship name="planets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlanetModel" inverseName="films" inverseEntity="PlanetModel"/>
+        <relationship name="species" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpeciesModel" inverseName="films" inverseEntity="SpeciesModel"/>
+        <relationship name="starships" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StarshipModel" inverseName="films" inverseEntity="StarshipModel"/>
+        <relationship name="vehicles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VehicleModel" inverseName="films" inverseEntity="VehicleModel"/>
+    </entity>
+    <entity name="PeopleModel" representedClassName="PeopleModel" syncable="YES" codeGenerationType="category">
+        <attribute name="birthYear" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="editedTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eyeColor" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="hairColor" optional="YES" attributeType="String"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mass" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="skinColor" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="films" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmModel" inverseName="characters" inverseEntity="FilmModel"/>
+        <relationship name="homeworld" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlanetModel" inverseName="residents" inverseEntity="PlanetModel"/>
+        <relationship name="species" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpeciesModel" inverseName="people" inverseEntity="SpeciesModel"/>
+        <relationship name="starships" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StarshipModel" inverseName="pilots" inverseEntity="StarshipModel"/>
+        <relationship name="vehicles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VehicleModel" inverseName="pilots" inverseEntity="VehicleModel"/>
+    </entity>
+    <entity name="PlanetModel" representedClassName="PlanetModel" syncable="YES" codeGenerationType="category">
+        <attribute name="climate" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="diameter" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="editedTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="gravity" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="orbitalPeriod" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="population" optional="YES" attributeType="String"/>
+        <attribute name="rotationPeriod" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="surfaceWater" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="terrain" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="films" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmModel" inverseName="planets" inverseEntity="FilmModel"/>
+        <relationship name="residents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PeopleModel" inverseName="homeworld" inverseEntity="PeopleModel"/>
+        <relationship name="species" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SpeciesModel" inverseName="homeworld" inverseEntity="SpeciesModel"/>
+    </entity>
+    <entity name="SpeciesModel" representedClassName="SpeciesModel" syncable="YES" codeGenerationType="category">
+        <attribute name="averageHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="averageLifespan" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="classification" optional="YES" attributeType="String"/>
+        <attribute name="createdTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="designation" optional="YES" attributeType="String"/>
+        <attribute name="editedTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="eyeColors" optional="YES" attributeType="String"/>
+        <attribute name="hairColors" optional="YES" attributeType="String"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="skinColors" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="films" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmModel" inverseName="species" inverseEntity="FilmModel"/>
+        <relationship name="homeworld" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlanetModel" inverseName="species" inverseEntity="PlanetModel"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PeopleModel" inverseName="species" inverseEntity="PeopleModel"/>
+    </entity>
+    <entity name="StarshipModel" representedClassName="StarshipModel" syncable="YES" codeGenerationType="category">
+        <attribute name="cagoCapacity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="consumables" optional="YES" attributeType="String"/>
+        <attribute name="costInCredits" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="crew" optional="YES" attributeType="Float" usesScalarValueType="YES"/>
+        <attribute name="editedTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="hyperdriveRating" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="length" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String"/>
+        <attribute name="maxAtmospheringSpeed" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mglt" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="model" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="passengers" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="starshipClass" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="films" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmModel" inverseName="starships" inverseEntity="FilmModel"/>
+        <relationship name="pilots" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PeopleModel" inverseName="starships" inverseEntity="PeopleModel"/>
+    </entity>
+    <entity name="VehicleModel" representedClassName="VehicleModel" syncable="YES" codeGenerationType="category">
+        <attribute name="cargoCapacity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="consumables" optional="YES" attributeType="String"/>
+        <attribute name="costInCredits" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="createdTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="crew" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="editedTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="length" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String"/>
+        <attribute name="maxAtmospheringSpeed" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="model" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="passengers" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="vehicleClass" optional="YES" attributeType="String"/>
+        <relationship name="films" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmModel" inverseName="vehicles" inverseEntity="FilmModel"/>
+        <relationship name="pilots" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PeopleModel" inverseName="vehicles" inverseEntity="PeopleModel"/>
+    </entity>
+    <elements>
+        <element name="PeopleModel" positionX="-63" positionY="-18" width="128" height="283"/>
+        <element name="PlanetModel" positionX="-54" positionY="-9" width="128" height="268"/>
+        <element name="SpeciesModel" positionX="-36" positionY="72" width="128" height="268"/>
+        <element name="VehicleModel" positionX="-18" positionY="144" width="128" height="283"/>
+        <element name="StarshipModel" positionX="0" positionY="171" width="128" height="313"/>
+        <element name="FilmModel" positionX="18" positionY="180" width="128" height="253"/>
+    </elements>
 </model>
